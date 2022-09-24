@@ -1,0 +1,107 @@
+{% extends "user/base.html" %}
+{% block title %}
+<title>Agrow - Tutorials</title>
+{% endblock title %}
+{% block section1 %}
+{% load embed_video_tags %}
+{% load static %}
+
+<style>
+
+  /* about us */
+  .about_img {
+    min-width: 100%;
+    max-height: 300px;
+  }
+
+
+  .img-fluid {
+    height: 100%;
+  }
+
+</style>
+
+
+
+<main id="main">
+
+  <!-- ======= Tutorials Section ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Tutorials</h2>
+        <ol>
+          <li><a href="{% url 'agro-home' %}">Home</a></li>
+          <li>Tutorials</li>
+        </ol>
+      </div>
+
+    </div>
+  </section><!-- End Tutorials Section -->
+
+  <section class="skills" data-aos="fade-up">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Video Lectures</h2>
+        <p>Visual training material oriented at clarifying new policy and governance approaches for adaptation and new emerging technologies, such as adaptive management and related decision-making processes.</p>
+      </div>
+      <section class="services">
+        <div class="container">
+  
+          <div class="row">
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
+              <div class="icon-box icon-box-pink">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4 class="title"><a href="">Irrigation Techniques</a></h4>
+                <p class="description">Irrigation is the agricultural process of applying controlled amounts of water to land to assist in the production of crops,</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon-box icon-box-cyan">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4 class="title"><a href="">Organic farming</a></h4>
+                <p class="description"> an agricultural system that uses fertilizers of organic origin</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box icon-box-green">
+                <div class="icon"><i class="bx bx-tachometer"></i></div>
+                <h4 class="title"><a href="">Pesticides</a></h4>
+                <p class="description">It is commonly used to eliminate or control a variety of agricultural pests that can damage crops and livestock and reduce farm productivity..</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box icon-box-blue">
+                <div class="icon"><i class="bx bx-world"></i></div>
+                <h4 class="title"><a href="">Modern Tools</a></h4>
+                <p class="description">The modern farm machinery has upgraded the agricultural industry for the best.</p>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Services Section -->
+      <div class="container">
+        <div class="row my-5">
+          {% for item in videos %}
+          <div class="col-lg-6 col-md-6 col-12 col-xxl-6">
+            <figure>
+              {% video item.url '400x250' %}
+            </figure>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex justify-content-left align-items-start flex-column">
+            <h4>{{ item.title }}</h4>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+  </section>
+  </div>
+
+  {% endblock section1 %}

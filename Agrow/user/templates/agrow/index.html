@@ -1,0 +1,169 @@
+{% extends "user/base.html" %}
+{% block title %}
+<title>AGROW-HOME</title>
+{% endblock title %}
+{% block section1 %}
+{% load static %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Modernising <span>Agriculture</span></h2>
+          <p class="animate__animated animate__fadeInUp">Modernization of agriculture led to an increase in total factor productivity in agriculture.It also led to resilience of agriculture and has made it less sensitive to weather condition and fluctuations in rainfall. </p>
+          <!-- <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a> -->
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Technologies</h2>
+          <p class="animate__animated animate__fadeInUp">Sensor technology is also available to measure the electrical
+            conductivity of soil, ground floor, organic matter content, and even soil characteristics such as pH.</p>
+          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Agricultural Tools</h2>
+          <p class="animate__animated animate__fadeInUp">Agricultural Tools ; Disc Harrow ; Agricultural Sprayer Pump ;
+            Agricultural Plough ; Hand Sickle ; Beehive Box.</p>
+          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= Why Us Section ======= -->
+    <div class="section-title">
+      <h2>Why-Us</h2>
+      <p>Amelioration, Audaciousness, Trustworthy, Solidarity</p>
+    </div>
+    
+    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 video-box">
+            <img src="{% static './user/assests/images/img3.jpg' %}" class="img-fluid" alt="" width="800" height="800">
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
+              data-autoplay="true"></a>
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-fingerprint"></i></div>
+              <h4 class="title"><a href="">E-Learning</a></h4>
+              <p class="description"> Nowadays every information is available on the internet but in a scattered way. We at Agrow provide you with all the information and learning material about agricultiure in one place.
+              </p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-gift"></i></div>
+              <h4 class="title"><a href="">Free of cost</a></h4>
+              <p class="description">To promote education in field of Agriculture Agrow provides you all the information and learning free of cost</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+    <!-- ======= Services Section ======= -->
+    <section class="services">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box icon-box-pink">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Learn</a></h4>
+              <p class="description">This learning platform includes courses and training materials oriented at new emerging technologies, such as adaptive management and related decision-making processes.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box icon-box-cyan">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">Shop</a></h4>
+              <p class="description">Agrow also has an online Agri Shop where you can buy Top quality fertilizers, seeds, Agro chemicals with Guaranteed Market's Best Price, 24x7 Customer Suppor</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-green">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Scheme</a></h4>
+              <p class="description">The Governent of India has launched a number of schemes that favors the farmers and agricultural sectors. The main aim of the government is to promote farming sector to help improve their economic conditions.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-blue">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">News</a></h4>
+              <p class="description">Know whats happening in the world in the agriculture sector.Get all the updates about farming here.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section class="facts section-bg" data-aos="fade-up">
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Clients</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Projects</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Hours Of Support</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Hard Workers</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+
+  </main><!-- End #main -->
+
+  {% endblock section1 %}

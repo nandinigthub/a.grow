@@ -1,0 +1,263 @@
+{% extends "user/base.html" %}
+{% block title %}
+<title>Agrow-Blogs</title>
+{% endblock title %}
+{% block section1 %}
+{% load static %}
+
+  <main id="main">
+
+    <!-- ======= Blog Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Blog</h2>
+
+          <ol>
+            <li><a href="{% url 'agro-home' %}">Home</a></li>
+            <li>Blog</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Blog Section -->
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-8 entries">
+
+            <article class="entry">
+
+              <div class="entry-img">
+                <img src="{% static './user/assests/images/blog1.jpg' %}" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="#">The first advance estimates of production of major Kharif crops for
+                  2022-23</a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">John
+                      Doe</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time
+                        datetime="2020-01-01">Jan 1, 2022</time></a></li>
+                  <!-- <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="#">12
+                      Comments</a></li> -->
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <p>
+                  A new report from IIED explores why expectations of including smallholder farmers in modern value
+                  chains have fallen short, and suggests new and more realistic ways of getting inclusion to work for
+                  smallholders
+                </p>
+
+              </div>
+
+            </article><!-- End blog entry -->
+
+            <article class="entry">
+
+              <div class="entry-img">
+                <img src="{% static './user/assests/images/blog2.jpg' %}" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="#">Kharif crops for 2022-23 have been released by the Ministry of Agriculture
+                </a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">Prabhu dev</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time
+                        datetime="2020-01-01">April 28, 2022</time></a></li>
+                  <!-- <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="#">12
+                      Comments</a></li> -->
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <p>
+                  A new report from IIED explores why expectations of including smallholder farmers in modern value
+                  chains have fallen short, and suggests new and more realistic ways of getting inclusion to work for
+                  smallholders
+                </p>
+
+              </div>
+
+            </article><!-- End blog entry -->
+
+            <article class="entry">
+
+              <div class="entry-img">
+                <img src="{% static './user/assests/images/blog1.jpg' %}" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="#"> Narendra Singh Tomar, Union Minister of Agriculture and Farmers Welfare said
+                  that foodgrain production of 149.92 million </a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">Jahanvi
+                      Rathi</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time
+                        datetime="2020-01-01">May 21, 2020</time></a></li>
+                  <!-- <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="#">12
+                      Comments</a></li> -->
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <p>
+                  A new report from IIED explores why expectations of including smallholder farmers in modern value
+                  chains have fallen short, and suggests new and more realistic ways of getting inclusion to work for
+                  smallholders
+                </p>
+
+              </div>
+
+            </article><!-- End blog entry -->
+
+            <article class="entry">
+
+              <div class="entry-img">
+                <img src="{% static './user/assests/images/blog2.jpg' %}" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="#">The total production of kharif rice during 2022-23 is estimated at 104.99
+                  million tonnes.</a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">Raj
+                      Dev</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time
+                        datetime="2020-01-01">March 07, 2020</time></a></li>
+                  <!-- <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="#">12
+                      Comments</a></li> -->
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <p>
+                  A new report from IIED explores why expectations of including smallholder farmers in modern value
+                  chains have fallen short, and suggests new and more realistic ways of getting inclusion to work for
+                  smallholders
+                </p>
+
+              </div>
+
+            </article><!-- End blog entry -->
+
+            <!-- <div class="blog-pagination">
+              <ul class="justify-content-center">
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+              </ul>
+            </div> -->
+
+          </div><!-- End blog entries list -->
+
+          <div class="col-lg-4">
+
+            <div class="sidebar">
+
+              <!-- <h3 class="sidebar-title">Search</h3>
+              <div class="sidebar-item search-form">
+                <form action="">
+                  <input type="text">
+                  <button type="submit"><i class="bi bi-search"></i></button>
+                </form>
+              </div>End sidebar search formn -->
+
+              <h3 class="sidebar-title">Categories</h3>
+              <div class="sidebar-item categories">
+                <ul>
+                  <li><a href="#">Irrigation Equipment <span>(25)</span></a></li>
+                  <li><a href="#">Harvesting/Threshing <span>(12)</span></a></li>
+                  <li><a href="#">Fertilliser/Pesticides <span>(5)</span></a></li>
+                  <li><a href="#">Basic Tools <span>(22)</span></a></li>
+
+                </ul>
+              </div><!-- End sidebar categories-->
+
+              <h3 class="sidebar-title">Recent Posts</h3>
+              <div class="sidebar-item recent-posts">
+                <div class="post-item clearfix">
+                  <img src="{% static './user/assests/images/blog2.jpg' %}" alt="">
+                  <h4><a href="#"> the study of the lands, features, inhabitants, and phenomena of the
+                      Earth </a></h4>
+                  <time datetime="2020-01-01">Feb 20, 2022</time>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="{% static './user/assests/images/blog1.jpg' %}" alt="">
+                  <h4><a href="#"> The history of agriculture began </a></h4>
+                  <time datetime="2020-01-01">April 11, 2021</time>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="{% static './user/assests/images/blog2.jpg' %}"alt="">
+                  <h4><a href="#"> gathering wild grains beginning at least 105,000 years ago, </a></h4>
+                  <time datetime="2020-01-01">May 13, 2021</time>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="{% static './user/assests/images/blog1.jpg' %}" alt="">
+                  <h4><a href="#">The major agricultural products can be broadly grouped into foods</a>
+                  </h4>
+                  <time datetime="2020-01-01">August 17, 2022</time>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="{% static './user/assests/images/blog2.jpg' %}" alt="">
+                  <h4><a href="#">decreasing number of agricultural workers continues</a></h4>
+                  <time datetime="2020-01-01">Jan 21, 2022</time>
+                </div>
+
+              </div><!-- End sidebar recent posts-->
+
+              <!-- <h3 class="sidebar-title">Tags</h3>
+              <div class="sidebar-item tags">
+                <ul>
+                  <li><a href="#">App</a></li>
+                  <li><a href="#">IT</a></li>
+                  <li><a href="#">Business</a></li>
+                  <li><a href="#">Mac</a></li>
+                  <li><a href="#">Design</a></li>
+                  <li><a href="#">Office</a></li>
+                  <li><a href="#">Creative</a></li>
+                  <li><a href="#">Studio</a></li>
+                  <li><a href="#">Smart</a></li>
+                  <li><a href="#">Tips</a></li>
+                  <li><a href="#">Marketing</a></li>
+                </ul>
+              </div> -->
+                <!-- End sidebar tags -->
+
+            </div><!-- End sidebar -->
+
+          </div><!-- End blog sidebar -->
+
+        </div>
+
+      </div>
+    </section><!-- End Blog Section -->
+
+  </main><!-- End #main -->
+
+  {% endblock section1 %}
