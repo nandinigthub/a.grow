@@ -22,3 +22,12 @@ class Profile(models.Model):
             output_size = (300, 300)
             img.thumbnail(output_size)
             img.save(self.image.path)
+
+class Contact(models.Model):
+    name = models.CharField(max_length = 200)
+    email = models.EmailField()
+    subject= models.TextField(max_length = 100)
+    message = models.TextField()
+    
+    def __str__(self):
+        return self.email

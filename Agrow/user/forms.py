@@ -3,6 +3,15 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from .models import Profile
 
+from django.forms import ModelForm
+from .models import Contact
+
+
+class ContactForm(ModelForm):
+    class Meta:
+        model = Contact
+        fields = '__all__'
+
 
 class UserRegisterForm(UserCreationForm):
     email = forms.EmailField()
